@@ -61,7 +61,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 # GETTING-STARTED: change 'biophork' to your project name:
-ROOT_URLCONF = 'biophork.urls'
+ROOT_URLCONF = 'biophork_app.urls'
 
 TEMPLATES = [
     {

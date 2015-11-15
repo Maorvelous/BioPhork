@@ -22,5 +22,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^(?P<pk>\d+)/$', biophork.biophork_dna.dna_sequence.as_view(), name='detail'),
+    url(r'^(?P<pk>\d+)/$', biophork_app.dna_sequence.as_view(), name='detail'),
 ]

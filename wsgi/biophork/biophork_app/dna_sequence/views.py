@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, render, get_list_or_404
-from biophork.wsgi.biophork.biophork_dna.dna_sequence.models import Contact
+from biophork_app.dna_sequence.models import Contact
 
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect, HttpResponse
