@@ -60,7 +60,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 # GETTING-STARTED: change 'biophork' to your project name:
-ROOT_URLCONF = 'biophork_app.urls'
+ROOT_URLCONF = 'biophork.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'biophork.biophork_app.wsgi.application'
+WSGI_APPLICATION = 'biophork.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
