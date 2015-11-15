@@ -38,7 +38,6 @@ ALLOWED_HOSTS = [
     #'www.example.com', # Second DNS alias (set up in the app)
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -79,8 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'biophork.wsgi.application'
-
+WSGI_APPLICATION = 'biophork.biophork_app.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
@@ -105,7 +103,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
