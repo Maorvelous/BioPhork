@@ -1,25 +1,20 @@
-#!/usr/bin/env python
-
 from setuptools import setup
 
-setup(
-    # GETTING-STARTED: set your app name:
-    name='BioPhork',
-    # GETTING-STARTED: set your app version:
-    version='1.0',
-    # GETTING-STARTED: set your app description:
-    description='OpenShift App',
-    # GETTING-STARTED: set author name (your name):
-    author='Maorvelous',
-    # GETTING-STARTED: set author email (your email):
-    author_email='ing.marco.maggiotti@hotmail.it',
-    # GETTING-STARTED: set author url (your url):
-    url='http://www.python.org/sigs/distutils-sig/',
-    # GETTING-STARTED: define required django version:
-    install_requires=[
-        'Django==1.8.4'
-    ],
-    dependency_links=[
-        'https://pypi.python.org/simple/django/'
-    ],
+import os
+
+# Put here required packages
+packages = ['Django<=1.9',]
+
+if 'REDISCLOUD_URL' in os.environ and 'REDISCLOUD_PORT' in os.environ and 'REDISCLOUD_PASSWORD' in os.environ:
+     packages.append('django-redis-cache')
+     packages.append('hiredis')
+
+setup(name='YourAppName',
+      version='1.0',
+      description='OpenShift App',
+      author='Your Name',
+      author_email='example@example.com',
+      url='https://pypi.python.org/pypi',
+      install_requires=packages,
 )
+
